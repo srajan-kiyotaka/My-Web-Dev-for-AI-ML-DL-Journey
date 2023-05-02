@@ -1,0 +1,51 @@
+.LinkedIn-button {
+    font-size: 18px;
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    width: 375px;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background-color 0.15s;
+}
+
+.LinkedIn-button:hover {
+    background-color: rgb(5, 68, 130);
+}
+
+p {
+    font-family: Arial;
+    font-size: 15px;
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.email {
+    margin-bottom: 5px;
+}
+
+.search-box {
+    font-size: 15px;
+    width: 360px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: none; */
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.agreement {
+    margin-bottom: 15px;
+}
