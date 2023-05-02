@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Grid
+        </title>
+        <style>
+            .grid-exercise-a {
+                display: grid;
+                grid-template-columns: 200px 75px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .grid-exercise-b {
+                display: grid;
+                grid-template-columns: 50px 1fr 75px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .grid-exercise-c {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "grid-exercise-a">
+            <div style="background-color: aqua;">
+                200px
+            </div>
+            <div style="background-color: pink;">
+                75px
+            </div>
+        </div>
+        <div class="grid-exercise-b">
+            <div style="background-color: aqua;">
+                col1
+            </div>
+            <div style="background-color: pink;">
+                col2
+            </div>
+            <div style="background-color: aqua;">
+                col3
+            </div>
+        </div>
+        <div class="grid-exercise-c">
+            <div style="background-color: aqua;">
+                col1
+            </div>
+            <div style="background-color: pink;">
+                col2
+            </div>
+            <div style="background-color: aqua;">
+                col3
+            </div>
+            <div style="background-color: pink;">
+                col4
+            </div>
+            <div style="background-color: aqua;">
+                col5
+            </div>
+            <div style="background-color: pink;">
+                col6
+            </div>
+            <div style="background-color: aqua;">
+                col7
+            </div>
+            <div style="background-color: pink;">
+                col8
+            </div>
+        </div>
+    </body>
+</html>
