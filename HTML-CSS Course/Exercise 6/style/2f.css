@@ -1,0 +1,34 @@
+.link-text {
+    color: rgb(0, 113, 133);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.price {
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+}
+
+.cart-button {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    width: 110px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.buy-button {
+    background-color: rgb(255, 164, 28);
+    color: black;
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    width: 110px;
+    cursor: pointer;
+}

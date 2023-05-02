@@ -1,0 +1,44 @@
+.LinkedIn-left-button {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background-color 0.15s;
+}
+
+.LinkedIn-left-button:hover {
+    background-color: rgb(5, 68, 130);
+}
+
+.LinkedIn-right-button {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border-color: rgb(10, 102, 194);
+    border-style: solid;
+    border-radius: 18px;
+    border-width: 1px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+                border-width 0.1s;
+}
+
+.LinkedIn-right-button:hover {
+    background-color: rgb(182, 204, 250);
+    border-width: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

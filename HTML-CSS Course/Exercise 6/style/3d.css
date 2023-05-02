@@ -1,0 +1,35 @@
+.Booststrap-left-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    width: 105px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background-color 0.15s;
+}
+
+.Booststrap-left-button:hover {
+    background-color: rgb(104, 71, 152);
+}
+
+.Booststrap-right-button {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border-color: rgb(108, 117, 125);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    height: 36px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.15s, 
+                color 0.15s;
+}
+
+.Booststrap-right-button:hover {
+    background-color: rgb(108, 117, 125);;
+    color: white;
+}

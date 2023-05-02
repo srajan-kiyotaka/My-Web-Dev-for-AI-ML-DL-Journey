@@ -1,0 +1,23 @@
+.Booststrap-left-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    width: 105px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.Booststrap-right-button {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border-color: rgb(108, 117, 125);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    height: 36px;
+    width: 100px;
+    cursor: pointer;
+}

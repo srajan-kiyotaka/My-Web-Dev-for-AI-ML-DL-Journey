@@ -1,0 +1,78 @@
+/* Margin and Padding Together on Button */
+.one-button {
+    background-color: rgb(20, 148, 24);
+    border: None;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: padding-left 0.15s,
+                padding-right 0.15s,
+                margin-right 0.15s,
+                margin-left 0.15s;
+}
+
+.one-button:hover {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.two-button {
+    background-color: rgb(20, 148, 24);
+    border: None;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: padding-left 0.15s,
+                padding-right 0.15s,
+                margin-right 0.15s,
+                margin-left 0.15s;
+}
+
+.two-button:hover {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.three-button {
+    background-color: rgb(20, 148, 24);
+    border: None;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: padding-left 0.15s,
+                padding-right 0.15s,
+                margin-right 0.15s,
+                margin-left 0.15s;
+}
+
+.three-button:hover {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
