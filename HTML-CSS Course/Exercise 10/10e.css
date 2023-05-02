@@ -1,0 +1,84 @@
+p {
+    font-family: Arial;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.name-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.friends-text {
+    font-size: 16px;
+    color: gray;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+.friend-button {
+    background-color: rgb(2, 147, 251);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.image, .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-container, .profile-image-container, .mutual-friends-container {
+    display: inline-block;
+}
+
+.card-container {
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+}
+
+.image-container {
+    height: 220px;
+}
+
+.profile-image-container {
+    width: 44px;
+    height: 44px;
+}
+
+.profile-image {
+    border: none;
+    border-radius: 22px;
+    vertical-align: middle;
+}
+
+.profile-container {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.profile-image-container {
+    margin-left: 9px;
+}
+
+.mutual-friends-container {
+    margin-left: 0px;
+}
