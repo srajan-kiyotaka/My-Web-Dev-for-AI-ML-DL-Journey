@@ -1,0 +1,28 @@
+<style>
+    /* 3D-click button */
+    ._3D-click-button {
+        background-color: rgb(20, 148, 24);
+        border: None;
+        color: white;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.15s,
+                    margin-top 0.15s,
+                    margin-left 0.15s;
+    }
+
+    ._3D-click-button:active {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+</style>
+
+<button class="_3D-click-button">
+    Shadow
+</button>
