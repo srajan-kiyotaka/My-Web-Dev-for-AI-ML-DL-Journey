@@ -1,0 +1,46 @@
+.first-name-box {
+    width: 140px;
+    font-size: 18px;
+    display: inline-block;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 8px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.email-box {
+    width: 320px;
+    font-size: 18px;
+    display: block;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 8px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 10px;
+}
+
+.sign-up-button {
+    width: 350px;
+    font-size: 20px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(47, 127, 231);
+    color: white;
+    font-weight: bold;
+}
