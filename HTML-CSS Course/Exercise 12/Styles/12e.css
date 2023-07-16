@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    /* align-items: center; */
+    border-radius: 5px;
+    padding-top: 6px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 6px;
+}
+.column2{
+    background-color: rgb(52, 118, 241);
+    border: 1px rgb(52, 118, 241);
+    border-radius: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white;
+}

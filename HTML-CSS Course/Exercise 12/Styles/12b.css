@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.first{
+    background-color: lightblue;
+    width: 50px;
+}
+.second{
+    background-color: lightpink;
+    flex: 1;
+}
+.third{
+    background-color: lightblue;
+    width: 75px;
+}

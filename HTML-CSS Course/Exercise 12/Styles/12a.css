@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.first{
+    background-color: lightblue;
+    width: 200px;
+}
+.second{
+    background-color: lightpink;
+    width: 75px;
+}
