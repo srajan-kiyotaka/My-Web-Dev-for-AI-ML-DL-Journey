@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.element-1{
+    display: flex;
+    width: 100px;
+    background-color: lightpink;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    background-color: black;
+    color: white;
+}
+
+.element-2{
+    width: 200px;
+    background-color: lightblue;
+}
