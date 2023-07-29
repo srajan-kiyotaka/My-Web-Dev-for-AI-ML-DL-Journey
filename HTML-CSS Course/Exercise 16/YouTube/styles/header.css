@@ -1,0 +1,184 @@
+.top-header-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding-left: 85px;
+    padding-right: 20px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    /* border-bottom-width: 10px; */
+    /* border-bottom-color: gray; */
+    border-bottom: 1px solid rgb(181, 181, 181);
+    z-index: 100;
+}
+
+.youtube {
+    width: 100px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.search-input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-button {
+    height: 41px;
+    width: 80px;
+    margin-left: -1px;
+    /* background-color: rgb(220, 220, 220); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    cursor: pointer;
+    position: relative;
+}
+
+.search-hover-card,
+.voice-search-hover-card,
+.create-hover-card,
+.youtube-app-hover-card,
+.notification-hover-card {
+    position: absolute;
+    font-size: 12px;
+    padding: 10px 16px;
+    bottom: -50px;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+
+.notification-hover-card {
+    bottom: -40px;
+}
+
+.create-hover-card,
+.youtube-app-hover-card {
+    bottom: -36px;
+}
+
+.search-button:hover .search-hover-card,
+.voice-search-card:hover .voice-search-hover-card,
+.upload-icon-card:hover .create-hover-card,
+.apps-icon-card:hover .youtube-app-hover-card,
+.notification-icon-card:hover .notification-hover-card {
+    opacity: 0.96;
+}
+
+
+.search-button img {
+    width: 30px;
+    /* height: 40px; */
+}
+
+.voice-search-card {
+    width: 60px;
+    height: 43px;
+    margin-left: 12px;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.voice-search-card img {
+    width: 24px;
+}
+
+.icon-bar {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.upload-icon-card,
+.apps-icon-card,
+.notification-icon-card,
+.account-icon-card {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-icon-card img,
+.apps-icon-card img,
+.notification-icon-card img{
+    width: 24px;
+}
+
+.account-icon-card {
+    width: 36px;
+    margin-left: 10px;
+}
+
+.account-icon-card img{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.notification-icon-card {
+    position: relative;
+}
+
+.notification {
+    width: 17px;
+    height: 20px;
+    font-size: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
