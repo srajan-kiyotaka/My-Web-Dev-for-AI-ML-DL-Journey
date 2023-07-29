@@ -1,0 +1,68 @@
+.side-bar {
+    width: 80px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    z-index: 200;
+}
+
+.hamburger-icon-card {
+    padding-top: 2px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hamburger-icon-card img {
+    width: 24px;
+    cursor: pointer;
+}
+
+
+.home-icon-card,
+.explore-icon-card,
+.subscriptions-icon-card,
+.library-icon-card,
+.orignals-icon-card,
+.youtube-music-icon-card {
+    width: 70px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 8px;
+    padding: 4px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.home-icon-card img, 
+.explore-icon-card img,
+.subscriptions-icon-card img,
+.library-icon-card img,
+.orignals-icon-card img,
+.youtube-music-icon-card img{
+    width: 25px;
+    padding-bottom: 8px;
+}
+
+.home-icon-card:hover,
+.explore-icon-card:hover,
+.subscriptions-icon-card:hover,
+.library-icon-card:hover,
+.orignals-icon-card:hover,
+.youtube-music-icon-card:hover {
+    background-color: rgb(190, 190, 190);
+}
