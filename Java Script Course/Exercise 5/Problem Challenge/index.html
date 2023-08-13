@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="display-section">
+            <h1>
+                Calculator
+            </h1>
+        </div>
+        <div class="input-section">
+            <button onclick="
+                calculate += '1';
+                console.log('Current Equation: ' + calculate);
+            ">
+                1
+            </button>
+            <button onclick="
+                calculate += '2';
+                console.log('Current Equation: ' + calculate);
+            ">
+                2
+            </button>
+            <button onclick="
+                calculate += '3';
+                console.log('Current Equation: ' + calculate);
+            ">
+                3
+            </button>
+            <button onclick="
+                calculate += '*';
+                console.log('Current Equation: ' + calculate);
+            ">
+                *
+            </button>
+            <button onclick="
+                calculate += '4';
+                console.log('Current Equation: ' + calculate);
+            ">
+                4
+            </button>
+            <button onclick="
+                calculate += '5';
+                console.log('Current Equation: ' + calculate);
+            ">
+                5
+            </button>
+            <button onclick="
+                calculate += '6';
+                console.log('Current Equation: ' + calculate);
+            ">  
+                6
+            </button>
+            <button onclick="
+                calculate += '/';
+                console.log('Current Equation: ' + calculate);
+            ">
+                /
+            </button>
+            <button onclick="
+                calculate += '7';
+                console.log('Current Equation: ' + calculate);
+            ">
+                7
+            </button>
+            <button onclick="
+                calculate += '8';
+                console.log('Current Equation: ' + calculate);
+            ">
+                8
+            </button>
+            <button onclick="
+                calculate += '9';
+                console.log('Current Equation: ' + calculate);
+            ">
+                9
+            </button>
+            <button onclick="
+                calculate += '+';
+                console.log('Current Equation: ' + calculate);
+            ">
+                +
+            </button>
+            <button onclick="
+                calculate += '0';
+                console.log('Current Equation: ' + calculate);
+            ">
+                0
+            </button>
+            <button onclick="
+                calculate += '.';
+                console.log('Current Equation: ' + calculate);
+            ">
+                .
+            </button>
+            <button onclick="
+                calculate += '-';
+                console.log('Current Equation: ' + calculate);
+            ">
+                -
+            </button>
+            <button onclick="
+                console.log('Current Equation: ' + calculate);
+                result = eval(calculate);
+                console.log('Result: ' + result);
+                calculate = '';
+            ">
+                =
+            </button>
+            <button class = "last-btn" onclick="
+                console.log('Resetting the Calculator!');
+                calculate = '';
+                console.log('Current Equation: ' + calculate);
+            ">
+                Clear
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
