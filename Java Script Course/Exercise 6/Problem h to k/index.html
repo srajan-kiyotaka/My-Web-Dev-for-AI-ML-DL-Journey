@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>
+        Shopping Cart
+    </h1>
+    <button onclick="
+        if(cartQty < 10){
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        
+    ">
+        Show Cart
+    </button>
+    <button onclick="
+        if(cartQty < 10){
+            cartQty++;
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+    ">
+        Add to Cart
+    </button>
+    <button onclick="
+        if(cartQty < 10){
+            cartQty = (cartQty + 2 > 10)?(10):(cartQty + 2);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+    ">
+        Add by 2
+    </button>
+    <button onclick="
+        if(cartQty < 10){
+            cartQty = (cartQty + 3 > 10)?(10):(cartQty + 3);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+    ">
+        Add by 3
+    </button>
+    <button onclick="
+        if(cartQty < 10){
+            cartQty = (cartQty + 4 > 10)?(10):(cartQty + 4);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+    ">
+        Add by 4
+    </button>
+    <button onclick="
+        if(cartQty < 10){
+            cartQty = (cartQty + 5 > 10)?(10):(cartQty + 5);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+    ">
+        Add by 5
+    </button>
+    <button onclick="
+        if(cartQty > 0){
+            cartQty--;
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Empty!`);
+        }
+        
+    ">
+        Remove from Cart
+    </button>
+    <button onclick="
+        if(cartQty > 0){
+            cartQty = (cartQty - 2 >= 0)?(cartQty - 2):(0);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Empty!`);
+        }
+    ">
+        Remove by 2
+    </button>
+    <button onclick="
+        if(cartQty > 0){
+            cartQty = (cartQty - 3 >= 0)?(cartQty - 3):(0);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Empty!`);
+        }
+    ">
+        Remove by 3
+    </button>
+    <button onclick="
+        cartQty = 0;
+        console.log('Resetting the Cart!');
+        console.log(`Cart Quantity: ${cartQty}`);
+    ">
+        Reset Cart
+    </button>
+</body>
+</html>
