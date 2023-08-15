@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="display-section">
+            <h1>
+                Stone Paper Scissor
+            </h1>
+        </div>
+        <div class="input-section">
+            <button onclick="
+                randNum = Math.random();
+                computerMove = getMove(randNum);
+                userMove = 'Rock';
+                calculate(computerMove, userMove);
+            ">
+                Rock
+            </button>
+            <button onclick="
+                randNum = Math.random();
+                computerMove = getMove(randNum);
+                userMove = 'Paper';
+                calculate(computerMove, userMove);
+            ">
+                Paper
+            </button>
+            <button onclick="
+                randNum = Math.random();
+                computerMove = getMove(randNum);
+                userMove = 'Scissor';
+                calculate(computerMove, userMove);
+            ">
+                Scissor
+            </button>
+            <button class = "last-btn" onclick="
+                console.log('Resetting the Game!');
+                userMove = '';
+                computerMove = '';
+                localStorage.removeItem('score');
+                score = {
+                    wins: 0,
+                    losses: 0,
+                    ties: 0
+                }
+            ">
+                Reset
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
