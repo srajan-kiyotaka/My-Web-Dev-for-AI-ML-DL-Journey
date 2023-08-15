@@ -15,77 +15,77 @@
         </div>
         <div class="input-section">
             <button onclick="
-                update('1');
+                calculate = update(calculate, '1');
             ">
                 1
             </button>
             <button onclick="
-                update('2');
+                calculate = update(calculate, '2');
             ">
                 2
             </button>
             <button onclick="
-                update('3');
+                calculate = update(calculate, '3');
             ">
                 3
             </button>
             <button onclick="
-                update('*');
+                calculate = update(calculate, '*');
             ">
                 *
             </button>
             <button onclick="
-                update('4');
+                calculate = update(calculate, '4');
             ">
                 4
             </button>
             <button onclick="
-                update('5');
+                calculate = update(calculate, '5');
             ">
                 5
             </button>
             <button onclick="
-                update('6');
+                calculate = update(calculate, '6');
             ">  
                 6
             </button>
             <button onclick="
-                update('/');
+                calculate = update(calculate, '/');
             ">
                 /
             </button>
             <button onclick="
-                update('7');
+                calculate = update(calculate, '7');
             ">
                 7
             </button>
             <button onclick="
-                update('8');
+                calculate = update(calculate, '8');
             ">
                 8
             </button>
             <button onclick="
-                update('9');
+                calculate = update(calculate, '9');
             ">
                 9
             </button>
             <button onclick="
-                update('+');
+                calculate = update(calculate, '+');
             ">
                 +
             </button>
             <button onclick="
-                update('0');
+                calculate = update(calculate, '0');
             ">
                 0
             </button>
             <button onclick="
-                update('.');
+                calculate = update(calculate, '.');
             ">
                 .
             </button>
             <button onclick="
-                update('-');
+                calculate = update(calculate, '-');
             ">
                 -
             </button>
@@ -98,9 +98,8 @@
             </button>
             <button class = "last-btn" onclick="
                 console.log('Resetting the Calculator!');
-                localStorage.removeItem('equation');
                 calculate = '';
-                console.log('Calculator Reset!');
+                console.log('Current Equation: ' + calculate);
             ">
                 Clear
             </button>

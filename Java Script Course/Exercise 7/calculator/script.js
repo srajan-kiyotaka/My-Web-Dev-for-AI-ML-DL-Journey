@@ -1,9 +1,8 @@
-let calculate = localStorage.getItem('equation') || '';
-
+let calculate = "";
 let result = 0;
 
-function update(str){
+function update(calculate, str){
     calculate += str;
     console.log('Current Equation: ' + calculate);
-    localStorage.setItem('equation', calculate);
+    return calculate;
 }
