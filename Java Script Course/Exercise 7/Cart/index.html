@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cart</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>
+        Shopping Cart
+    </h1>
+    <button onclick="
+        if(cartQty < 10){
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        else {
+            console.log(`Cart is Full!`);
+            console.log(`Cart Quantity: ${cartQty}`);
+        }
+        
+    ">
+        Show Cart
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, 1);
+    ">
+        Add to Cart
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, 2);
+    ">
+        Add by 2
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, 3);
+    ">
+        Add by 3
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, 4);
+    ">
+        Add by 4
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, 5);
+    ">
+        Add by 5
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, -1);
+        
+    ">
+        Remove from Cart
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, -2);
+    ">
+        Remove by 2
+    </button>
+    <button onclick="
+        cartQty = updateCartQty(cartQty, -3);
+    ">
+        Remove by 3
+    </button>
+    <button onclick="
+        cartQty = 0;
+        console.log('Resetting the Cart!');
+        console.log(`Cart Quantity: ${cartQty}`);
+    ">
+        Reset Cart
+    </button>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="display-section">
+            <h1>
+                Calculator
+            </h1>
+        </div>
+        <div class="input-section">
+            <button onclick="
+                calculate = update(calculate, '1');
+            ">
+                1
+            </button>
+            <button onclick="
+                calculate = update(calculate, '2');
+            ">
+                2
+            </button>
+            <button onclick="
+                calculate = update(calculate, '3');
+            ">
+                3
+            </button>
+            <button onclick="
+                calculate = update(calculate, '*');
+            ">
+                *
+            </button>
+            <button onclick="
+                calculate = update(calculate, '4');
+            ">
+                4
+            </button>
+            <button onclick="
+                calculate = update(calculate, '5');
+            ">
+                5
+            </button>
+            <button onclick="
+                calculate = update(calculate, '6');
+            ">  
+                6
+            </button>
+            <button onclick="
+                calculate = update(calculate, '/');
+            ">
+                /
+            </button>
+            <button onclick="
+                calculate = update(calculate, '7');
+            ">
+                7
+            </button>
+            <button onclick="
+                calculate = update(calculate, '8');
+            ">
+                8
+            </button>
+            <button onclick="
+                calculate = update(calculate, '9');
+            ">
+                9
+            </button>
+            <button onclick="
+                calculate = update(calculate, '+');
+            ">
+                +
+            </button>
+            <button onclick="
+                calculate = update(calculate, '0');
+            ">
+                0
+            </button>
+            <button onclick="
+                calculate = update(calculate, '.');
+            ">
+                .
+            </button>
+            <button onclick="
+                calculate = update(calculate, '-');
+            ">
+                -
+            </button>
+            <button onclick="
+                result = eval(calculate);
+                console.log('Result: ' + result);
+                calculate = '';
+            ">
+                =
+            </button>
+            <button class = "last-btn" onclick="
+                console.log('Resetting the Calculator!');
+                calculate = '';
+                console.log('Current Equation: ' + calculate);
+            ">
+                Clear
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
