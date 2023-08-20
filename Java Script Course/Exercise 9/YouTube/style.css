@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(4, 22, 54);
+    color: white;
+    padding: 100px 200px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: rgb(4, 22, 54);
+    color: white;
+    border: 1px solid white;
+}

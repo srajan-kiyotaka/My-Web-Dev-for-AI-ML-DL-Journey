@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="display-section">
+            <h1>
+                Calculator
+            </h1>
+        </div>
+        <div class="output-card">
+
+        </div>
+        <div class="input-section">
+            <button onclick="
+                update('1');
+            ">
+                1
+            </button>
+            <button onclick="
+                update('2');
+            ">
+                2
+            </button>
+            <button onclick="
+                update('3');
+            ">
+                3
+            </button>
+            <button onclick="
+                update('*');
+            ">
+                *
+            </button>
+            <button onclick="
+                update('4');
+            ">
+                4
+            </button>
+            <button onclick="
+                update('5');
+            ">
+                5
+            </button>
+            <button onclick="
+                update('6');
+            ">  
+                6
+            </button>
+            <button onclick="
+                update('/');
+            ">
+                /
+            </button>
+            <button onclick="
+                update('7');
+            ">
+                7
+            </button>
+            <button onclick="
+                update('8');
+            ">
+                8
+            </button>
+            <button onclick="
+                update('9');
+            ">
+                9
+            </button>
+            <button onclick="
+                update('+');
+            ">
+                +
+            </button>
+            <button onclick="
+                update('0');
+            ">
+                0
+            </button>
+            <button onclick="
+                update('.');
+            ">
+                .
+            </button>
+            <button onclick="
+                update('-');
+            ">
+                -
+            </button>
+            <button onclick="
+                result = eval(calculate);
+                console.log('Result: ' + result);
+                outputTextElement.innerText = result;
+                calculate = '';
+            ">
+                =
+            </button>
+            <button class = "last-btn" onclick="
+                console.log('Resetting the Calculator!');
+                localStorage.removeItem('equation');
+                calculate = '';
+                console.log('Calculator Reset!');
+                outputTextElement.innerText = calculate;
+            ">
+                Clear
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>
+            Amazon Shipping Calculator
+        </h1>
+        <div class="main-text">
+            Orders under $40 = +$10 shipping.
+            <br>
+            Orders over $40 = FREE shipping.
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Enter the Total Amount!" class="input-text" onkeydown="
+                if(event.key === 'Enter'){
+                    generateBill();
+                }
+            ">
+            <button class="calculate-btn" onclick="
+                generateBill();
+            ">
+                Calculate
+            </button>
+        </div>
+        <div class="result-text">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

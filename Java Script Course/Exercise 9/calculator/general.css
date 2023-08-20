@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.display-section {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.calculator-container{
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.input-section button {
+    width: 80%;
+    padding: 10px 16px;
+}
+
+.last-btn {
+    width: 100%;
+    padding: 12px 24px;
+}
+
+.output-card {
+    padding: 20px 10px;
+}

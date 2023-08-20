@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 900px;
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+
+.display-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section button {
+    width: 100%;
+    padding: 10px 16px;
+}
+
+.input-section button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.score-display-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+.score-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+}
+
+.result-display-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
