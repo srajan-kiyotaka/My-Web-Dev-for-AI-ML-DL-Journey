@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.display-section {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.calculator-container{
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.gray-btn {
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    cursor: pointer;
+}
+
+.orange-btn {
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(254, 160, 10);
+    color: white;
+    cursor: pointer;
+}
+
+.last-btn {
+    width: 100%;
+    padding: 12px 24px;
+}
+
+.output-card {
+    padding: 20px 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
