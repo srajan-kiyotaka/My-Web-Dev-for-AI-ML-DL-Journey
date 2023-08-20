@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(4, 22, 54);
+    color: white;
+    padding: 100px 200px;
+}
+
+.sub-btn {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.is-sub-btn {
+    background-color: rgb(4, 22, 54);
+    color: white;
+    border: 1px solid white;
+}
+
+.sub-btn:hover {
+    background-color: rgb(6, 35, 85);
+    color: white;
+    border: 1px solid white;
+}
