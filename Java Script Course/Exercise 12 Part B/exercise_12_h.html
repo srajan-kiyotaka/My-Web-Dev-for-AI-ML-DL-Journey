@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 h</title>
+</head>
+<body>
+    <button class="js-add-btn">
+        Add
+    </button>
+    <button class="js-remove-btn">
+        Remove
+    </button>
+    <script>
+        let msg = 2;
+        let flag = false;
+        const addBtnElm = document.querySelector('.js-add-btn');
+        const removeBtnElm = document.querySelector('.js-remove-btn');
+
+        addBtnElm.addEventListener('click', () => {msg++;});
+        removeBtnElm.addEventListener('click', () => {msg--;});
+
+        const task = () => {
+            if(flag) document.title = `New Message(${msg})`;
+            else document.title = 'App';
+            flag = !flag;
+        }
+        setInterval(task, 1000);
+    </script>
+</body>
+</html>
