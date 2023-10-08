@@ -1,0 +1,48 @@
+.body {
+    font-family: Arial;
+}
+
+.main,
+.todo-data-card {
+    display: grid;
+    grid-template-columns: 240px 160px 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.main {
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.todo-data-card {
+    align-items: center;
+}
+
+.todo-input-box,
+.todo-input-date-box {
+    font-size: 16px;
+    padding: 6px;
+}
+
+.btn-sub {
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-name,
+.todo-date {
+    font-size: 16px;
+}
+
+.todo-del-btn {
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 0px;
+    cursor: pointer;
+}
