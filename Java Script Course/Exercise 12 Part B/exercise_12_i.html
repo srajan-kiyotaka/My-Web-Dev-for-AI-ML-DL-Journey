@@ -6,21 +6,26 @@
     <title>12 i</title>
 </head>
 <body>
-    <button onclick="
-        msg++;
-    ">
+    <button class="js-add-btn">
         Add
     </button>
-    <button onclick="
-        if(msg > 0)
-            msg--;
-    ">
+    <button class="js-remove-btn">
         Remove
     </button>
     <script>
         let msg = 2;
         let flag = false;
-        const task = function() {
+
+        const addBtnElm = document.querySelector('.js-add-btn');
+        const removeBtnElm = document.querySelector('.js-remove-btn');
+
+        addBtnElm.addEventListener('click', () => {msg++;});
+        removeBtnElm.addEventListener('click', () => {
+            if(msg > 0)
+                msg--;
+        });
+
+        const task = () => {
             if(msg === 0) document.title = 'App';
             else{
                 if(flag) document.title = `New Message(${msg})`;

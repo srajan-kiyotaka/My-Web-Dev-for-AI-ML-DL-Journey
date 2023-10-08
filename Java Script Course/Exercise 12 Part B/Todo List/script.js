@@ -27,7 +27,7 @@ function renderTodoList(){
     const todoListElm = document.querySelector('.js-card-todo-list');
     let htmlCode = '';
     let n = todoList.length;
-    todoList.forEach(function(todoObj, index) {
+    todoList.forEach((todoObj, index) => {
         htmlCode += `
         <div class="todo-name">
             ${todoObj.name}
@@ -35,12 +35,20 @@ function renderTodoList(){
         <div class="todo-date">
             ${todoObj.date}
         </div>
-        <button class="todo-del-btn" onclick="
-            removeItem(${index});
-        ">
+        <button class="todo-del-btn js-todo-del-btn">
             Remove
         </button>
         `;
     });
     todoListElm.innerHTML = htmlCode;
+    document.querySelectorAll('.js-todo-del-btn').forEach((todoBtn, index) => {
+        todoBtn.addEventListener('click', () => {
+            removeItem(index);
+        });
+    });
 }
+
+const addTodoBtnElm = document.querySelector('.js-add-todo-btn');
+
+addTodoBtnElm.addEventListener('click', addTodoList);
+

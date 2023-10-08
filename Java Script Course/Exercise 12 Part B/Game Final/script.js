@@ -40,8 +40,7 @@ function autoPlay(){
         textAutoPlayElm.innerText = "On Auto Play";
         const autoPlayFunc = function () {
             userMove = getMove(Math.random());
-            computerMove = getMove(Math.random());
-            calculate(computerMove, userMove);
+            startGame(userMove);
         };
         autoPLayID = setInterval(autoPlayFunc, 1000);
     }
@@ -59,6 +58,11 @@ function getMove(num){
     }
 }
 
+function startGame(userMove){
+    randNum = Math.random();
+    computerMove = getMove(randNum);
+    calculate(computerMove, userMove);
+}
 
 function calculate(computerMove, userMove){
     if(computerMove === "Rock"){
@@ -139,34 +143,7 @@ function calculate(computerMove, userMove){
     localStorage.setItem("moves", textMoveElem.innerHTML);
 }
 
-const rockBtnElm = document.querySelector(".js-rock-btn");
-const paperBtnElm = document.querySelector(".js-paper-btn");
-const scissorBtnElm = document.querySelector(".js-scissor-btn");
-const resetBtnElm = document.querySelector(".js-reset-btn");
-const autoPlayBtnElm = document.querySelector(".js-auto-play-btn");
-
-rockBtnElm.addEventListener("click", () => {
-    randNum = Math.random();
-    computerMove = getMove(randNum);
-    userMove = 'Rock';
-    calculate(computerMove, userMove);
-});
-
-paperBtnElm.addEventListener("click", () => {
-    randNum = Math.random();
-    computerMove = getMove(randNum);
-    userMove = 'Paper';
-    calculate(computerMove, userMove);
-});
-
-scissorBtnElm.addEventListener("click", () => {
-    randNum = Math.random();
-    computerMove = getMove(randNum);
-    userMove = 'Scissor';
-    calculate(computerMove, userMove);
-});
-
-resetBtnElm.addEventListener("click", () => {
+function resetScore(){
     console.log('Resetting the Game!');
     userMove = '';
     computerMove = '';
@@ -183,29 +160,72 @@ resetBtnElm.addEventListener("click", () => {
     textMoveElem.innerText = '';
     localStorage.setItem('result', textResultElem.innerText);
     localStorage.setItem('moves', textMoveElem.innerText);
+    const responseCardElm = document.querySelector('.js-response-card');
+    responseCardElm.innerHTML = '';
+}
+
+const rockBtnElm = document.querySelector(".js-rock-btn");
+const paperBtnElm = document.querySelector(".js-paper-btn");
+const scissorBtnElm = document.querySelector(".js-scissor-btn");
+const resetBtnElm = document.querySelector(".js-reset-btn");
+const autoPlayBtnElm = document.querySelector(".js-auto-play-btn");
+
+rockBtnElm.addEventListener("click", () => {
+    startGame('Rock');
 });
+
+paperBtnElm.addEventListener("click", () => {
+    startGame('Paper');
+});
+
+scissorBtnElm.addEventListener("click", () => {
+    startGame('Scissor');
+});
+
+resetBtnElm.addEventListener("click", secureReset);
 
 autoPlayBtnElm.addEventListener("click", autoPlay);
 
 const bodyElm = document.querySelector('body');
 
+function secureReset () {
+    const responseCardElm = document.querySelector('.js-response-card');
+    responseCardElm.innerHTML = `
+        Are you sure you want to reset the game?
+        <button class="reset-yes-btn js-reset-yes-btn">
+        Yes
+        </button>
+        <button class="reset-no-btn js-reset-no-btn">
+        No
+        </button>
+    `;
+    
+    const resetYesBtnElm = document.querySelector('.js-reset-yes-btn');
+    resetYesBtnElm.addEventListener('click', resetScore);
+    const resetNoBtnElm = document.querySelector('.js-reset-no-btn');
+    resetNoBtnElm.addEventListener('click', () => {
+        responseCardElm.innerHTML = '';
+    });
+}
+
 bodyElm.addEventListener('keydown', (event) => {
     if(event.key === 'r'){
-        randNum = Math.random();
-        computerMove = getMove(randNum);
-        userMove = 'Rock';
-        calculate(computerMove, userMove);
+        startGame('Rock');
     }
     else if(event.key === 'p'){
-        randNum = Math.random();
-        computerMove = getMove(randNum);
-        userMove = 'Paper';
-        calculate(computerMove, userMove);
+        startGame('Paper');
     }
     else if(event.key === 's'){
-        randNum = Math.random();
-        computerMove = getMove(randNum);
-        userMove = 'Scissor';
-        calculate(computerMove, userMove);
+        startGame('Scissor');
+    }
+    else if(event.key === 'a'){
+        autoPlay();
+    }
+    else if(event.key === 'Backspace'){
+        secureReset();
+    }
+    else{
+        console.log(event.key);
     }
 });
+

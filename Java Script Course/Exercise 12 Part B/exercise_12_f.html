@@ -11,11 +11,7 @@
     </style>
 </head>
 <body>
-    <button class="js-btn" onclick="
-        clearTimeout(taskID);
-        taskID = setTimeout(task, 2000);
-        displayText.innerHTML = 'Added to Cart!';    
-    ">
+    <button class="js-btn">
         Add to Cart!
     </button>
     <div class="js-text-display text-display">
@@ -24,6 +20,14 @@
     <script>
         const displayText = document.querySelector('.js-text-display');
         let taskID;
+        const btnElm = document.querySelector('.js-btn');
+        
+        btnElm.addEventListener('click', () => {
+            clearTimeout(taskID);
+            taskID = setTimeout(task, 2000);
+            displayText.innerHTML = 'Added to Cart!'; 
+        });
+        
         const task = function() {
             displayText.innerHTML = '';
         }

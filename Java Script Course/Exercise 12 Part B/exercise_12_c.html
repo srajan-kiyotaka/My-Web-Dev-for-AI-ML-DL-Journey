@@ -9,14 +9,15 @@
     </style>
 </head>
 <body>
-    <button class="js-btn" onclick="
-        setTimeout(task, 1000);    
-    ">
+    <button class="js-btn">
         Start!
     </button>
     <script>
         const btnText = document.querySelector('.js-btn');
-        const task = function() {
+        btnText.addEventListener('click', () => {
+            setTimeout(task, 1000);
+        });
+        const task = () => {
             btnText.innerHTML = 'Done!';
         }
     </script>

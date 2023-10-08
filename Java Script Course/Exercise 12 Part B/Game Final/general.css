@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(25, 25, 25);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 900px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section button {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(25, 25, 25);
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* .input-section button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+} */
+
+.score-display-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+.score-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+}
+
+.result-display-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.rock-img, 
+.paper-img,
+.scissor-img {
+    height: 50px;
+    /* margin: 0 20px; */
+}
+
+.reset-btn,
+.auto-play-btn,
+.reset-no-btn,
+.reset-yes-btn {
+    background-color: white;
+    color: black;
+    border: None;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: large;
+}
+
+.text-result,
+.text-moves {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.response-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin: 50px 0px;
+}
