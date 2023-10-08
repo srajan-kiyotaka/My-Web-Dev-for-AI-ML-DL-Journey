@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 e</title>
+    <style>
+        .text-display {
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <button class="js-btn" onclick="
+        setTimeout(task, 2000);
+        displayText.innerHTML = 'Added to Cart!';    
+    ">
+        Add to Cart!
+    </button>
+    <div class="js-text-display text-display">
+
+    </div>
+    <script>
+        const displayText = document.querySelector('.js-text-display');
+        const task = function() {
+            displayText.innerHTML = '';
+        }
+    </script>
+</body>
+</html>

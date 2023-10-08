@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 g</title>
+</head>
+<body>
+    <script>
+        let flag = false;
+        const task = function() {
+            if(flag) document.title = 'New Message(2)';
+            else document.title = 'App';
+            flag = !flag;
+        }
+        setInterval(task, 1000);
+    </script>
+</body>
+</html>
